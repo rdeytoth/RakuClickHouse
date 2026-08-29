@@ -1,0 +1,39 @@
+{
+  "name": "ClickHouse",
+  "description": "Type-aware ClickHouse client with live query progress, cancellation and streaming results",
+  "version": "0.2.0",
+  "api": "1",
+  "auth": "zef:CHANGEME",
+  "license": "Artistic-2.0",
+  "perl": "6.d",
+  "authors": [
+    "Erik Zoltan"
+  ],
+  "depends": [
+    "JSON::Fast"
+  ],
+  "test-depends": [
+    "Test"
+  ],
+  "provides": {
+    "ClickHouse": "lib/ClickHouse.rakumod",
+    "ClickHouse::Types": "lib/ClickHouse/Types.rakumod",
+    "ClickHouse::Transport": "lib/ClickHouse/Transport.rakumod",
+    "ClickHouse::Progress": "lib/ClickHouse/Progress.rakumod",
+    "ClickHouse::ProgressBar": "lib/ClickHouse/Progress.rakumod"
+  },
+  "resources": [],
+  "tags": [
+    "ClickHouse",
+    "database",
+    "OLAP",
+    "SQL",
+    "analytics",
+    "client"
+  ],
+  "source-url": "",
+  "support": {
+    "source": "",
+    "bugtracker": ""
+  }
+}
