@@ -24,6 +24,27 @@ zef install ClickHouse
 Requires ClickHouse 23.6 or newer for the default `session_timezone=UTC`
 behaviour; pass `timezone => ''` to work with older servers.
 
+## History
+
+This module was created Erik Zoltan and Randy Dey-Toth in August 2026 using Claude Fable.
+
+Randy had been accessing ClickHouse in Raku using the Perl 5 ClickHouse driver via the Inline::Perl5 Raku module. 
+It worked, but had limitations, such as not having parameter binding.
+
+The ClickHouse HTTP interface was well documented, and it seemed Raku should have it's own
+ClickHouse driver, rather than relying on a Perl5 one, but who has the time for such
+exercises, when a workable solution was already in hand? 
+
+Claude, that's who!
+
+Randy added two wrapper methods to the code, "select", and "do", method names used by the Perl5 ClickHouse
+driver. That way, all his existing code worked without further modification by merely removing 
+the ":from<Perl5>" adverb from the "use ClickHouse" statement at the top of the code.
+
+Outside of this History section, and those two wrapper methods, written by Randy, 
+everything in this distribution was written by Claude Fable as a "work-for-hire", 
+as requested by Randy and directed by Erik.
+
 ## Progress
 
 `clickhouse-client` shows a progress bar while a query runs. So does this, and
