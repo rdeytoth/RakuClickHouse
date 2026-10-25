@@ -3,11 +3,11 @@
   "description": "Type-aware ClickHouse client with live query progress, cancellation and streaming results",
   "version": "0.2.0",
   "api": "1",
-  "auth": "zef:CHANGEME",
+  "auth": "zef:rdeytoth",
   "license": "Artistic-2.0",
   "perl": "6.d",
   "authors": [
-    "Erik Zoltan"
+    "Erik Zoltan","Randy Dey-Toth"
   ],
   "depends": [
     "JSON::Fast"
@@ -31,7 +31,7 @@
     "analytics",
     "client"
   ],
-  "source-url": "",
+  "source-url": "https://github.com/rdeytoth/RakuClickHouse",
   "support": {
     "source": "",
     "bugtracker": ""
